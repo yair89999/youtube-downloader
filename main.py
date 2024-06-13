@@ -1,10 +1,7 @@
 import os
 from pytube import YouTube
 
-if os.getcwd().split("//")[-1] != "youtube video downloader":
-    os.chdir("youtube video downloader")
-
-video_links = ["https://www.youtube.com/watch?v=eYVwF4OG-H4"]
+video_links = []
 
 def Download(link):
     youtubeObject = YouTube(link)
