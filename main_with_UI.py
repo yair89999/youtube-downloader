@@ -54,7 +54,7 @@ def Download():
     """
     youtubeObject = YouTube(link)
 
-    current_video_info = VideoInformation(link=link, resolution=resolution)
+    current_video_info = VideoInformation(link=link)
 
     if file_type == "MP3": # download only the audio
         youtubeObject = youtubeObject.streams.get_audio_only()
